@@ -1,10 +1,22 @@
 import './App.css';
+import Header from './Header.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <p>This is my first code</p>
-    </div>
+    <>
+      <Header>
+      </Header>
+
+      <Main>
+      </Main>
+
+      <Footer>
+
+      </Footer>
+
+    </>
   );
 }
 
