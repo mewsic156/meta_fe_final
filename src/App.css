@@ -1,3 +1,5 @@
+
+
 nav {
   display: flex;
   justify-content: center;
@@ -33,18 +35,22 @@ header{
   align-items: center;
 }
 
-/*nav{
-  height: 10vh;
-  margin-left: 5vw;
-  border: 2px dashed blue;
-  width: 60%;
-}*/
-
 main{
   color: white;
   height: 60vh;
   padding: 4vh 8vh 4vh 8vh;
   background-color: #495E57;
+}
+
+.main-content{
+  padding: 4vh 8vh 4vh 8vh;
+  width: 60vw;
+  height: 50vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-content h1{
   text-align: center;
 }
 
