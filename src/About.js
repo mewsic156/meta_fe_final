@@ -13,8 +13,8 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
                     </div>
 
                     <div className='imageFrame'>
-                        <img src={require('./files/potato.jpg')}/>
-                        <img src={require('./files/tomato.jpg')}/>
+                        <img src={require('./files/potato.jpg')} alt='potato'/>
+                        <img src={require('./files/tomato.jpg')} alt='tomato'/>
                     </div>
                 </div>
             </article>

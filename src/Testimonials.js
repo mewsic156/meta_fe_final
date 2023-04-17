@@ -13,7 +13,7 @@ function Testimonials() {
                 <div className="grid-testimonials-item">
                 <p>5 ⭐️</p>
                 <div className='testimonialsDish'>
-                    <img src={require('./files/dessert.jpg')}/>
+                    <img src={require('./files/dessert.jpg')} alt='testimonial1'/>
                     <div>dishName</div>
                 </div>
                 <p>"Wow, such flavor"</p>
@@ -23,7 +23,7 @@ function Testimonials() {
                 <div className="grid-testimonials-item">
                 <p>5 ⭐️</p>
                 <div className='testimonialsDish'>
-                    <img src={require('./files/dessert.jpg')}/>
+                    <img src={require('./files/dessert.jpg')} alt='testimonial2'/>
                     <div>dishName</div>
                 </div>
                 <p>"Wow, such flavor"</p>
@@ -33,7 +33,7 @@ function Testimonials() {
                 <div className="grid-testimonials-item">
                 <p>5 ⭐️</p>
                 <div className='testimonialsDish'>
-                    <img src={require('./files/dessert.jpg')}/>
+                    <img src={require('./files/dessert.jpg')} alt='testimonial3'/>
                     <div>dishName</div>
                 </div>
                 <p>"Wow, such flavor"</p>
@@ -43,7 +43,7 @@ function Testimonials() {
                 <div className="grid-testimonials-item">
                 <p>5 ⭐️</p>
                 <div className='testimonialsDish'>
-                    <img src={require('./files/dessert.jpg')}/>
+                    <img src={require('./files/dessert.jpg')} alt='testimonial4'/>
                     <div>dishName</div>
                 </div>
                 <p>"Wow, such flavor"</p>

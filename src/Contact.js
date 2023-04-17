@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Footer() {
+function Contact() {
   return (
-    <footer>
+    <>
       <div className="grid-footer-container">
-        <div><img className='footer-image' src={require('./files/restaurant.jpg')}/></div>
+        <div><img className='footer-image' src={require('./files/restaurant.jpg')} alt='restaurant'/></div>
 
         <div className="grid-footer-item">
           <p>Navigation</p>
@@ -34,8 +34,8 @@ function Footer() {
         </div>
 
       </div>
-    </footer>
+    </>
   );
 }
 
-export default Footer;
+export default Contact;

@@ -1,21 +1,28 @@
 import './App.css';
-import Header from './Header.js';
-import Main from './Main.js';
-import Footer from './Footer.js';
+import Nav from './Nav.js';
+import Form from './Form.js';
+import Specials from './Specials.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Testimonials from './Testimonials.js';
 
 function App() {
   return (
     <>
-      <Header>
-      </Header>
+      <header>
+        <Nav/>
+      </header>
 
-      <Main>
-      </Main>
+      <main>
+        <Form/>
+        <Specials/>
+        <Testimonials/>
+        <About/>
+      </main>
 
-      <Footer>
-
-      </Footer>
-
+      <footer>
+        <Contact/>
+      </footer>
     </>
   );
 }

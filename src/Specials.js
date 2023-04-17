@@ -15,7 +15,7 @@ function Specials(){
 
                 <div className="grid-specials-container">
                     <div className="grid-specials-item">
-                        <img src={require('./files/dessert.jpg')}/>
+                        <img src={require('./files/dessert.jpg')} alt='special1'/>
                         <div className='grid-specials-container-desc'>
                             <div>dishName</div>
                             <div>$ 0.00</div>
@@ -25,7 +25,7 @@ function Specials(){
                     </div>
 
                     <div className="grid-specials-item">
-                        <img src={require('./files/dessert.jpg')}/>
+                        <img src={require('./files/dessert.jpg')} alt='special2'/>
                         <div className='grid-specials-container-desc'>
                             <div>dishName</div>
                             <div>$ 0.00</div>
@@ -35,7 +35,7 @@ function Specials(){
                     </div>
 
                     <div className="grid-specials-item">
-                        <img src={require('./files/dessert.jpg')}/>
+                        <img src={require('./files/dessert.jpg')} alt='special3'/>
                         <div className='grid-specials-container-desc'>
                             <div>dishName</div>
                             <div>$ 0.00</div>
