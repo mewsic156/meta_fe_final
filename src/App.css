@@ -158,6 +158,10 @@ footer{
   color: black;
 }
 
+.reservations-block{
+  color: black;
+}
+
 .specials-title div:nth-child(1){
   width: 50%;
   display: inline-block;

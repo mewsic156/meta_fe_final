@@ -1,52 +1,79 @@
-import React from 'react';
+import {React, useState} from 'react';
+import Reservations from './Reservations.js';
 
 function Form(){
+
+    const [diners, setDiners] = useState("");
+    const [time, setTime] = useState("");
+    const [date, setDate] = useState("");
+    const [ocassion, setOcassion] = useState("casual");
+    const [show, setShow] = useState(false);
+    const [reservations, setReservations] = useState({});
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const newReservation = {
+            diners: diners,
+            time: time,
+            date: date,
+            ocassion: ocassion,
+          };
+        setReservations({ ...reservations, newReservation });
+        setShow(true);
+    }
+
+
     return(
+        <>
         <article className='form-block'>
             <div className="contain">
                 <h1>Reserve a table</h1>
                 <p>Fill the form to reserve your table</p>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <p>
-                    <label for="diners">
+                    <label>
                         NUMBER OF DINERS:
-                        <input type="number" id="diners" name="diners" min="2" max="8" value="4"/>
+                        <input required type="number" name="diners" min="2" max="8" value={diners} onChange={(e) => setDiners(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
-                    <label for="res_date">
+                    <label>
                         DATE:
-                        <input type="date" id="res_date" name="date"></input>
+                        <input required type="date" name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
-                    <label for="res_time">
+                    <label>
                         TIME:
-                        <input type="time" id="res_time" name="time" min="07:00" max="23:00"/>
+                        <input required type="time" name="time" min="07:00" max="23:00" value={time} onChange={(e) => setTime(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
                     <label>
                         🍷 OCASSION:
-                        <select className=''>
-                        <option value="option1">🎁 Birthday</option>
-                        <option value="option2">💍 Engagement</option>
-                        <option value="option3">⛪️ Anniversary</option>
+                        <select name="ocassion" value={ocassion} onChange={(e) => setOcassion(e.target.value)}>
+                        <option value="casual">🍜 Casual</option>
+                        <option value="birthday">🎁 Birthday</option>
+                        <option value="engagement">💍 Engagement</option>
+                        <option value="anniversary">⛪️ Anniversary</option>
                         </select>
                     </label>
                     </p>
 
                     <hr/>
 
-                    <button type="button" class="btn btn-warning">Reserve a table</button>
+                    <button type="submit" className="btn btn-warning">Reserve a table</button>
                 </form>
             </div>
         </article>
-    )
+        {show && <Reservations reservations={reservations}/>}
+        </>
+
+    );
 }
 
 export default Form;

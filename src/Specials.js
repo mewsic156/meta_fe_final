@@ -9,7 +9,7 @@ function Specials(){
                         <h2>Specials</h2>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-warning">Online menu</button>
+                        <button type="button" className="btn btn-warning">Online menu</button>
                     </div>
                 </div>
 
