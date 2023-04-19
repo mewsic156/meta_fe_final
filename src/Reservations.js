@@ -14,7 +14,7 @@ function Reservations(props){
                             const reservation = reservations[key];
                             return (
                                 <li key={key}>
-                                    Your {reservation.ocassion} meal for {reservation.diners} is sate at {reservation.time} next {reservation.date}
+                                    Your {reservation.ocassion} meal for {reservation.diners} is set at {reservation.time} next {reservation.date}
                                 </li>
                             );
                         })}

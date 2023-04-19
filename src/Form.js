@@ -32,30 +32,30 @@ function Form(){
 
                 <form onSubmit={handleSubmit}>
                     <p>
-                    <label>
+                    <label htmlFor='diners'>
                         NUMBER OF DINERS:
-                        <input required type="number" name="diners" min="2" max="8" value={diners} onChange={(e) => setDiners(e.target.value)}/>
+                        <input required type="number"  id='diners' name="diners" min="2" max="8" value={diners} onChange={(e) => setDiners(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
-                    <label>
+                    <label htmlFor='date'>
                         DATE:
-                        <input required type="date" name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
+                        <input required type="date" id='date'name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
-                    <label>
+                    <label htmlFor='time'>
                         TIME:
-                        <input required type="time" name="time" min="07:00" max="23:00" value={time} onChange={(e) => setTime(e.target.value)}/>
+                        <input required type="time" id="time" name="time" min="07:00" max="23:00" value={time} onChange={(e) => setTime(e.target.value)}/>
                     </label>
                     </p>
 
                     <p>
-                    <label>
+                    <label htmlFor='ocassion'>
                         🍷 OCASSION:
-                        <select name="ocassion" value={ocassion} onChange={(e) => setOcassion(e.target.value)}>
+                        <select name="ocassion" id='ocassion' value={ocassion} onChange={(e) => setOcassion(e.target.value)}>
                         <option value="casual">🍜 Casual</option>
                         <option value="birthday">🎁 Birthday</option>
                         <option value="engagement">💍 Engagement</option>
